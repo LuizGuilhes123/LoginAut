@@ -11,13 +11,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "User")
+@Table(name = "Users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String Id;
-    private String Name;
-    private String Password;
-    private String Email;
+    private String id;
+    private String name;
+    private String password;
+    private String email;
 }
